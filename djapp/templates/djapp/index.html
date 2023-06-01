@@ -1,0 +1,11 @@
+{% extends 'djapp/base.html' %}
+
+{% block content %}
+
+    <p></p>
+    <b>Themes:</b>
+    {% for theme in themes %}
+        <br><a href="{% url 'theme-detail' theme.id %}">{{ theme.title }}</a>
+    {% endfor %}
+
+{% endblock %}

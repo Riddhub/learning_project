@@ -1,0 +1,12 @@
+{% extends 'djapp/base.html' %}
+
+
+{% block menu %}
+
+    <p></p>
+        <b>Categories:</b>
+        {% for category in categories %}
+            <br>{{ category.title }}
+        {% endfor %}
+
+{% endblock %}

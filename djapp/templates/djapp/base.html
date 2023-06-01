@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+
+    {% block menu %}
+        <b>Categories:</b>
+        {% for category in categories %}
+            <br>{{ category.title }}
+        {% endfor %}
+    {% endblock %}
+    {% block content %}{% endblock %}
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+{% extends 'djapp/base.html' %}
+
+{% block content %}
+
+    <br><br><b>{{ theme.title }}</b>
+    <br>{{ theme.link }}
+    <br>{{ theme.created }}
+    <br><code>{{ theme.content|linebreaks }}</code>
+
+{% endblock %}
